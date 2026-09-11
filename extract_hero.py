@@ -1,0 +1,36 @@
+import re
+
+with open('backup_index.html', 'r', encoding='utf-8') as f:
+    html = f.read()
+
+# Replace class with className and for with htmlFor
+html = html.replace('class=', 'className=')
+html = html.replace('for=', 'htmlFor=')
+# Close unclosed tags like <input>, <img>, <br>, <hr>
+html = re.sub(r'(<input[^>]+?)(?<!/)>', r'\1 />', html)
+html = re.sub(r'(<img[^>]+?)(?<!/)>', r'\1 />', html)
+html = re.sub(r'(<br[^>]*?)(?<!/)>', r'\1 />', html)
+html = re.sub(r'(<hr[^>]*?)(?<!/)>', r'\1 />', html)
+
+# Match between <!-- 1. Hero Section --> and <!-- 2.
+match = re.search(r'<!-- 1\. Hero Section -->(.*?)<!-- 2\.', html, re.DOTALL)
+if match:
+    content = match.group(1).strip()
+    component_code = f"""import React from 'react';
+
+const Hero = () => {{
+  return (
+    <React.Fragment>
+      {{/* 1. Hero Section */}}
+      {content}
+    </React.Fragment>
+  );
+}};
+
+export default Hero;
+"""
+    with open('src/components/Hero.jsx', 'w', encoding='utf-8') as f:
+        f.write(component_code)
+    print("Hero extracted successfully")
+else:
+    print("Could not find Hero section")
