@@ -1,30 +1,39 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <React.Fragment>
-      {/* 1. Hero Section */}
-      <section className="pt-48 pb-32 bg-bg-light">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 items-stretch text-center md:text-left">
-            <div className="md:col-span-7 lg:col-span-6 flex flex-col justify-center">
-                <span className="inline-block px-4 py-1.5 border-l-4 border-accent text-primary text-sm font-bold uppercase tracking-wider mb-6 self-start">For Medical Professionals</span>
-                <h1 className="font-merriweather text-primary font-bold leading-tight text-4xl lg:text-[3.5rem] mb-6 tracking-tight">Amplify Your Clinical Authority</h1>
-                <p className="text-text-muted text-lg lg:text-xl mb-10 max-w-xl mx-auto md:mx-0">We help doctors and medical experts turn their knowledge into professional digital content. Build credibility, improve online visibility, and attract the right patients and professional inquiries.</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#contact" className="inline-flex items-center justify-center bg-primary hover:bg-primary-light text-white border border-primary hover:border-primary-light px-8 py-4 rounded text-base font-semibold uppercase tracking-wide transition-all shadow-sm hover:shadow-md">Start Building Your Brand</a>
-                    <a href="#workflow" className="inline-flex items-center justify-center bg-transparent hover:bg-primary text-primary hover:text-white border border-primary px-8 py-4 rounded text-base font-semibold uppercase tracking-wide transition-colors">See How It Works</a>
+    <section className="mt-[72px] pt-12 pb-16 bg-[#f8f9fa] relative overflow-hidden min-h-[500px] flex items-center">
+        
+        <div className="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-20 flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
+            {/* Text Content - Left Side */}
+            <div className="w-full md:w-1/2 lg:w-5/12">
+                <h1 className="font-merriweather text-[#072a4d] font-bold leading-[1.15] text-4xl lg:text-[44px] xl:text-[54px] mb-6">
+                    Make Your Business <br className="hidden lg:block" /> Stand Out Online
+                </h1>
+                
+                <p className="text-gray-600 text-[17px] mb-10 leading-relaxed">
+                    Whether you're a doctor, lawyer, or consultant, we build your brand across social media and digital platforms. We make it easy for people to find you, trust your expertise, and connect with your business.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                    <Link to="/contact" className="inline-flex items-center justify-center bg-[#072a4d] hover:bg-[#134475] text-white px-8 py-3.5 rounded-md text-sm font-medium transition-all shadow-md">
+                        Schedule a Consultation <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </Link>
+                    <a href="#services" className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-[#072a4d] border border-gray-200 px-8 py-3.5 rounded-md text-sm font-medium transition-all shadow-sm">
+                        Explore Our Services
+                    </a>
                 </div>
             </div>
-            <div className="md:col-span-5 lg:col-span-6 hidden md:block relative">
-                <div className="relative rounded-lg shadow-md group cursor-pointer z-10 h-full">
-                    <div className="overflow-hidden rounded-lg h-full">
-                        <img src="assets/doctor.jpg" alt="Medical Professional in a corporate setting" className="w-full h-full object-cover block transition-transform duration-[2000ms] ease-out group-hover:scale-105" />
-                    </div>
+
+            {/* Image - Right Side (Square Box) */}
+            <div className="w-full md:w-1/2 lg:w-6/12 hidden md:block">
+                <div className="aspect-[4/3] w-full max-w-[550px] mx-auto rounded-3xl overflow-hidden shadow-2xl relative border-4 border-white">
+                    <img src="/hero_diverse.jpg" alt="Diverse Professionals" className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105" />
                 </div>
             </div>
         </div>
     </section>
-    </React.Fragment>
   );
 };
 

@@ -1,32 +1,43 @@
 import React from 'react';
 
 const Portfolio = () => {
+  const features = [
+    { icon: "fa-desktop", label: "Professional Website" },
+    { icon: "fa-file-lines", label: "Expert Articles & Blogs" },
+    { icon: "fa-ranking-star", label: "SEO & Search Visibility" },
+    { icon: "fa-share-nodes", label: "Social Media Setup" },
+    { icon: "fa-address-card", label: "Profile Optimization" },
+    { icon: "fa-envelope", label: "Client Enquiry Support" }
+  ];
+
   return (
-    <section id="examples" className="py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-8">
-            <div className="text-center mb-16">
-                <h2 className="font-merriweather text-primary font-bold leading-tight text-3xl md:text-4xl">Elevate Your Digital Portfolio</h2>
-                <div className="w-12 h-[3px] bg-accent mx-auto my-6"></div>
-                <p className="text-text-muted text-lg max-w-3xl mx-auto">Examples of the professional assets we create to showcase your expertise.</p>
+    <section id="examples" className="py-20 bg-white">
+      <div className="max-w-[1400px] mx-auto px-8">
+        <div className="flex flex-col text-center mb-16">
+            <div className="flex items-center justify-center gap-4 mb-4">
+                <div className="w-8 h-[2px] bg-yellow-400"></div>
+                <span className="text-gray-500 text-xs font-bold uppercase tracking-widest">Your Digital Portfolio</span>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-stretch">
-                <div className="group cursor-pointer bg-bg-light p-10 rounded-2xl border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
-                    <h4 className="font-merriweather text-primary font-bold leading-tight text-xl mb-3">Clinical Case Studies</h4>
-                    <p className="text-text-muted text-sm leading-relaxed px-2">Detailed breakdowns of complex cases to demonstrate your problem-solving capabilities to peers and prospective patients.</p>
-                </div>
-                
-                <div className="group cursor-pointer bg-bg-light p-10 rounded-2xl border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
-                    <h4 className="font-merriweather text-primary font-bold leading-tight text-xl mb-3">Patient Education Articles</h4>
-                    <p className="text-text-muted text-sm leading-relaxed px-2">SEO-optimized, easy-to-understand articles that answer common patient questions and establish you as a helpful authority.</p>
-                </div>
-                
-                <div className="group cursor-pointer bg-bg-light p-10 rounded-2xl border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
-                    <h4 className="font-merriweather text-primary font-bold leading-tight text-xl mb-3">Procedure Explainers</h4>
-                    <p className="text-text-muted text-sm leading-relaxed px-2">Professional video content that sets patient expectations, reduces anxiety, and showcases your modern approach to care.</p>
-                </div>
-            </div>
+            <h2 className="font-merriweather text-primary font-bold text-3xl mb-4">What Your Digital Presence Can Include</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Everything you need to showcase your expertise and stay connected.
+            </p>
         </div>
+
+        {/* 6 Icons Row */}
+        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12 mb-20 relative">
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col items-center text-center max-w-[120px] relative z-10">
+              <div className="w-14 h-14 rounded-full bg-blue-50 text-primary flex items-center justify-center text-xl mb-4 shadow-sm border border-blue-100">
+                <i className={`fa-solid ${feature.icon}`}></i>
+              </div>
+              <span className="text-gray-600 text-[11px] font-semibold leading-tight">{feature.label}</span>
+            </div>
+          ))}
+        </div>
+
+
+      </div>
     </section>
   );
 };
