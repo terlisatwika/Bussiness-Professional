@@ -21,7 +21,7 @@ const FinalCTA = () => {
 
         <Link
           to="/contact"
-          className="inline-flex items-center justify-center bg-[#072a4d] hover:bg-[#134475] text-white px-8 py-3.5 rounded-md text-sm font-medium transition-all shadow-md"
+          className="inline-flex items-center justify-center bg-[#072a4d] hover:bg-[#134475] text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all shadow-md"
         >
           <span>Schedule a Consultation</span>
           <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>

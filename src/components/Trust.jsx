@@ -41,7 +41,7 @@ const Trust = () => {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="flex flex-col items-center bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
+                        <div key={index} className="flex flex-col items-center bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-sm hover:bg-white/10 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                             <h4 className="font-merriweather text-[17px] font-bold mb-4">{feature.title}</h4>
                             <p className="text-gray-400 text-[14px] leading-relaxed">{feature.text}</p>
                         </div>

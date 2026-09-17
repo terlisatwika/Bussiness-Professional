@@ -17,10 +17,10 @@ const Hero = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <Link to="/contact" className="inline-flex items-center justify-center bg-[#072a4d] hover:bg-[#134475] text-white px-8 py-3.5 rounded-md text-sm font-medium transition-all shadow-md">
+                    <Link to="/contact" className="inline-flex items-center justify-center bg-[#072a4d] hover:bg-[#134475] text-white px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:-translate-y-1 hover:shadow-lg animate-pulse-subtle">
                         Schedule a Consultation <i className="fa-solid fa-arrow-right ml-2 text-xs"></i>
                     </Link>
-                    <a href="#services" className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-[#072a4d] border border-gray-200 px-8 py-3.5 rounded-md text-sm font-medium transition-all shadow-sm">
+                    <a href="#services" className="inline-flex items-center justify-center bg-white text-[#072a4d] border border-gray-200 hover:text-blue-600 hover:border-blue-600 px-8 py-3.5 rounded-full text-sm font-medium transition-all duration-300 shadow-sm hover:-translate-y-1 hover:shadow-md">
                         Explore Our Services
                     </a>
                 </div>
