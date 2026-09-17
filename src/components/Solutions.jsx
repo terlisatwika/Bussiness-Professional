@@ -77,21 +77,21 @@ const Solutions = () => {
                 </div>
                 
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                  Showcase your industry knowledge and attract high-value clients with a premium digital footprint designed for experts.
+                  We establish an authoritative online presence that highlights your expertise and connects you with the right clients to grow your business.
                 </p>
                 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3">
                     <i className="fa-solid fa-circle-check text-[#8b5cf6] text-[15px]"></i>
-                    <span className="text-gray-600 text-[13.5px]">Strategic consulting & advisory</span>
+                    <span className="text-gray-600 text-[13.5px]">Showcase industry expertise</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <i className="fa-solid fa-circle-check text-[#8b5cf6] text-[15px]"></i>
-                    <span className="text-gray-600 text-[13.5px]">Executive coaching & mentoring</span>
+                    <span className="text-gray-600 text-[13.5px]">Generate quality connections</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <i className="fa-solid fa-circle-check text-[#8b5cf6] text-[15px]"></i>
-                    <span className="text-gray-600 text-[13.5px]">Specialized industry insights</span>
+                    <span className="text-gray-600 text-[13.5px]">Specialized landing pages</span>
                   </li>
                 </ul>
                 
