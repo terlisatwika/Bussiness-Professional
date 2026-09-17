@@ -5,15 +5,17 @@ const Hero = () => {
   return (
     <section className="mt-[72px] pt-12 pb-16 bg-[#f8f9fa] relative overflow-hidden min-h-[500px] flex items-center">
         
-        <div className="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-20 flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
-            {/* Text Content - Left Side */}
-            <div className="w-full md:w-1/2 lg:w-5/12">
-                <h1 className="font-merriweather text-[#072a4d] font-bold leading-[1.15] text-4xl lg:text-[44px] xl:text-[54px] mb-6">
-                    Make Your Business <br className="hidden lg:block" /> Stand Out Online
+        <div className="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-20">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+            
+            {/* Left Content */}
+            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                <h1 className="font-merriweather text-[#072a4d] font-bold text-[30px] sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.2] mb-6 whitespace-nowrap">
+                    Make Your Expertise <br /> Stand Out Online
                 </h1>
                 
-                <p className="text-gray-600 text-[17px] mb-10 leading-relaxed">
-                    Whether you're a doctor, lawyer, or consultant, we build your brand across social media and digital platforms. We make it easy for people to find you, trust your expertise, and connect with your business.
+                <p className="text-gray-500 text-[17px] leading-relaxed mb-10 max-w-xl">
+                    We help professional experts build a powerful brand by sharing their knowledge through a strong digital presence. We make it easy for people to find you, trust your insights, and connect with your expertise.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -32,6 +34,7 @@ const Hero = () => {
                     <img src="/hero_diverse.jpg" alt="Diverse Professionals" className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105" />
                 </div>
             </div>
+        </div>
         </div>
     </section>
   );

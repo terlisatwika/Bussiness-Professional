@@ -6,10 +6,9 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white border-b border-gray-100 z-50 py-4">
         <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
             <Link to="/" className="flex items-center gap-3">
-                <img src="/sbloom_logo.jpg" alt="Logo" className="w-12 h-12 rounded-full object-cover shadow-sm border border-gray-100" />
-                <div className="flex flex-col">
-                  <span className="font-merriweather text-xl font-bold text-[#072a4d] leading-tight">Business Professionals</span>
-                  <span className="text-[10px] text-gray-500 tracking-wider">Doctors and Experts</span>
+                <img src="/sbloom_creator_logo.png" alt="Logo" className="w-12 h-12 rounded-full object-cover shadow-sm border border-gray-100" />
+                <div className="flex flex-col justify-center">
+                  <span className="font-merriweather text-xl font-bold text-[#072a4d] leading-tight">Expert Professionals</span>
                 </div>
             </Link>
             <nav className="hidden md:flex items-center space-x-8 font-medium text-sm text-[#072a4d]">

@@ -3,26 +3,26 @@ import React from 'react';
 const Services = () => {
   const services = [
     {
-      title: "The Blooming Social",
-      description: "A comprehensive digital growth strategy designed to build, grow, and scale your brand's presence across all major social networks.",
+      title: "Social Authority Building",
+      description: "We help you build social media profiles that people actually want to follow. By sharing your unique perspective and engaging with your audience, we turn casual scrollers into a loyal community that values your voice.",
       bgImage: "/blooming_social.jpg",
       icon: "fa-hashtag"
     },
     {
       title: "Expert Content",
-      description: "Clear, accurate and easy-to-understand content that educates, informs and builds confidence in your expertise.",
+      description: "Creating great content shouldn't be stressful. We help you share your knowledge through clear, engaging posts that educate your audience, showcase your expertise, and make people feel confident in choosing you.",
       bgImage: "/collab_content.jpg",
       icon: "fa-file-lines"
     },
     {
       title: "Profile & Reputation",
-      description: "A well-optimised profile and positive client feedback to strengthen your credibility and online reputation.",
+      description: "Your online reputation is everything. We help you gather positive client reviews, polish your public profiles, and make sure that when someone searches for you online, they instantly see a trusted, credible expert.",
       bgImage: "/collab_reputation.jpg",
       icon: "fa-star"
     },
     {
       title: "Ongoing Digital Management",
-      description: "From SEO to social media management, we keep your digital presence active, relevant and growing.",
+      description: "Don't worry about the technical details—we've got you covered! From keeping your social media active to making sure you show up on Google, we handle the day-to-day work so you can focus entirely on what you do best.",
       bgImage: "/collab_management.jpg",
       icon: "fa-chart-line"
     }
@@ -61,7 +61,6 @@ const Services = () => {
               <div className="absolute inset-0 z-20 bg-white opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 flex flex-col justify-center items-center text-center p-8">
                  <h3 className="font-merriweather font-bold text-[#072a4d] text-lg mb-4">{service.title}</h3>
                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
-                 <div className="w-10 h-0.5 bg-[#072a4d]/20 mt-6 mx-auto"></div>
               </div>
               
             </div>

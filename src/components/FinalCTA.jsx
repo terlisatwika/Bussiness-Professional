@@ -13,10 +13,10 @@ const FinalCTA = () => {
 
       <div className="max-w-7xl mx-auto px-8 flex flex-col items-center text-center relative z-10">
         <h2 className="font-merriweather text-3xl md:text-4xl font-bold text-[#072a4d] mb-4">
-          Ready to strengthen your <br/> professional presence?
+          Ready to elevate your <br/> professional practice?
         </h2>
-        <p className="text-gray-500 text-sm mb-10">
-          Let's create a digital presence that works as hard as you do.
+        <p className="text-gray-500 text-[15px] mb-10">
+          Let's build a digital presence that works just as hard as you do.
         </p>
 
         <Link

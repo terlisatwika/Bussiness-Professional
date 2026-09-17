@@ -16,11 +16,10 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-5 flex flex-col">
             <Link to="/" className="flex items-center gap-4 mb-6">
-                <img src="/sbloom_logo.jpg" alt="Logo" className="w-14 h-14 rounded-full object-cover shadow-sm border border-[#fbbf24]" />
+                <img src="/sbloom_creator_logo.png" alt="Logo" className="w-14 h-14 rounded-full object-cover shadow-sm border border-[#fbbf24]" />
                 <div className="h-10 w-[1px] bg-blue-500/30"></div>
-                <div className="flex flex-col">
-                  <span className="font-merriweather text-[22px] font-bold text-white leading-tight">Business Professionals</span>
-                  <span className="text-[10px] tracking-[0.2em] uppercase text-blue-200/70 font-semibold mt-1">Doctors and Experts</span>
+                <div className="flex flex-col justify-center">
+                  <span className="font-merriweather text-[22px] font-bold text-white leading-tight">Expert Professionals</span>
                 </div>
             </Link>
             <p className="text-blue-100/70 text-[13px] leading-relaxed mb-8 max-w-sm">
@@ -69,7 +68,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-white/10 flex justify-end text-[11px] text-blue-200/60">
           <div className="flex items-center flex-wrap justify-end">
-            <span>&copy; 2026 Business Professionals. All rights reserved.</span>
+            <span>&copy; 2026 Expert Professionals. All rights reserved.</span>
             <span className="mx-4 text-blue-500/30">|</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <span className="mx-4 text-blue-500/30">|</span>
